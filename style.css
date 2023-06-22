@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;   
+}
+
+.grid-container{
+    height: 100vh;
+    display: grid;
+    gap: 10px;              /*me genera margen entre los grid*/
+    grid-template-rows: 100px auto;
+    grid-template-areas: 
+    "navbar  navbar navbar"
+    "sidebar section section";
+}
+.nav-bar{
+    grid-area: navbar;
+    background-color:#234567 ;
+}
+aside{
+    grid-area: sidebar;
+    background-color: rgb(141, 180, 167);
+    padding: 12px;
+}
+.information{
+    grid-area: section;
+    background-color: #439f70;
+    padding: 10%;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 85px;
+    padding: 5px 5%;   /*me da espacio en la margen izq y der*/
+}
+.logo{
+    font-size: 50px;
+    height: 70px;
+    width: auto;
+    cursor: pointer;
+    color:rgb(102, 163, 102);
+    transition: all 0.3s;
+}
+.logo:hover{
+    transform: scale(1.2);     /*aumenta de tamaño el elemento*/
+    color: #acdfc5;
+}
+.list{
+    list-style: none;
+}
+.list li{
+    display: inline-flex;  /*Se le asigna el display*/
+    padding: 0 20px;
+    font-size: 25px;
+}
+.list a:hover{
+    transform: scale(1.1);
+    color:rgb(102, 163, 102);
+}
+.list a{
+    text-decoration: none;
+    color: white;
+}
+.btn button{
+    color: #acdfc5;
+    padding: 9px 25px;
+    border: none;
+    border-radius: 50px;
+    font-size: 20px;
+    background:#76b077 ;
+    color:black;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.btn button:hover{
+    transform: scale(1.1);
+    color:rgb(102, 163, 102);
+    background-color: rgb(21, 20, 20);
+}
+img{
+    padding: 5px;
+}
+h1{
+    text-align:center;
+    margin-top: 1%;
+    font-size: 40px;
+}
+h2{
+    text-align: center;
+    margin-top: 5%;
+    font-size: 30px;
+}
+p {
+    font-size: 20px;
+}
+.skills{
+    font-size: 20px;
+}
